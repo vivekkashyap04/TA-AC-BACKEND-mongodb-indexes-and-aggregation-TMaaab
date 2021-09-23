@@ -1,0 +1,17 @@
+{
+  "name": "altcampus-assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "AltCampus",
+  "license": "GNU GPL V3",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^26.0.1",
+    "mongoose": "^6.0.7"
+  },
+  "keywords": [],
+  "description": ""
+}
