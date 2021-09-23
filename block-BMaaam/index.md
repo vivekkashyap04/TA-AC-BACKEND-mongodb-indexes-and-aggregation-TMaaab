@@ -5,11 +5,16 @@ Insert the data present in users.json into local mongodb database using `mongoim
 Write aggregation queries to perform following tasks.
 
 1. Find all users who are active.
+
 ```
    db.users.aggregate([{$match:{isActive:true}}]);
 ```
+
 2. Find all users whose name includes `blake` case insensitive.
+
+```
    db.users.aggregate([{$match:{name:'blake'}}]);
+```
 
 3. Find all males.
    db.users.aggregate([{$match:{gender:'male'}}]);
