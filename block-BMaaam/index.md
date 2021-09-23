@@ -72,13 +72,13 @@ Write aggregation queries to perform following tasks.
 
 11. Count all 20+ females who have brown eyes.
 
-````
+```
     db.users.aggregate([{$match:{eyeColor:'eyes',age:{$gt:20},gender:'female'}},{$group:{_id:'gender',count:{$sum:1}}}])
-    ```
+```
 12. Count all occurences of all eyeColors.
     Something like:-
 
-````
+```
 
 blue -> 30
 brown -> 67
@@ -122,7 +122,7 @@ db.users.aggregate([{$group:{_id:'$eyeColor',count:{$sum:1}}}])
     [
     { \_id: 'female', avg_age: 29.81854043392505 },
     { \_id: 'male', avg_age: 29.851926977687626 }
-    ```
+```
 
 16. Find the user with maximum age.
 
